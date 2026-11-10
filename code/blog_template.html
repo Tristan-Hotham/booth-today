@@ -1,0 +1,136 @@
+<!-- wp:paragraph -->
+<p><em>In 1898 and 1899 Charles Booth's investigators coloured every street of inner London from black to yellow, poorest to wealthiest. I read those colours by machine along today's streets and set them against deprivation in 2025. The old pattern still shows, faintly, and only street by street.</em></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://maps.tristanhotham.com/booth-today/">Explore the interactive version</a></div>
+<!-- /wp:button -->
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://doi.org/10.5281/zenodo.24115200">Read the paper</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->
+
+<!-- wp:paragraph -->
+<p>Charles Booth's poverty map is one of the most famous maps of London. His investigators gave each street one of seven colours. Black meant "Lowest class. Vicious, semi-criminal". Dark blue meant "Very poor, casual. Chronic want". Light blue meant "Poor. 18s. to 21s. a week for a moderate family". Then came purple for mixed streets, pink for "Fairly comfortable", red for the middle class and yellow for the wealthy. The map I use is the revised edition of 1898 and 1899, scanned by LSE Library and fitted to modern coordinates by Layers of London.</p>
+<p>So here is the obvious question. London has been bombed, cleared, rebuilt and gentrified since then, and hardly anyone living on these streets today is descended from the families Booth's visitors described. Are the streets he coloured poor still the poorer places?</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Reading a map by machine</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Booth coloured the house fronts, not the road. So for every street in today's OpenStreetMap that falls on his map, I read the colour of the paper a few metres either side of the middle of the street, every 4.5 m, and gave the street the colour that dominated. That gave a Booth colour to {{streets.ways_classified|int}} pieces of street, {{streets.km_classified|int}} km in all. The rest run through parks, railways, docks or ground that was empty in 1899.</p>
+<!-- /wp:paragraph -->
+
+{{IMG|b_method.png|Left, a crop of Booth's printed map of Spitalfields with red, pink, blue and black blocks along the streets; right, the same area with today's streets drawn in the colours read from it|Left: Booth's map of Spitalfields and Whitechapel. Right: the colours read along today's streets. Grey: no colour read.}}
+
+<!-- wp:paragraph -->
+<p>A computer reading an old scan makes mistakes, so the reading was checked by eye. On 200 streets picked at random, looked at under magnification without knowing the computer's answer, it gave the same colour for {{validation.test.exact_pc|f0}}% of the {{validation.test.n_scored|int}} that could be judged, and was no more than one step out for {{validation.test.within1_pc|f0}}%. It never called a comfortable street poor. Its main weakness is the other way round: it misses some poor streets, mostly ones Booth coloured partly light blue and partly purple. That kind of error tends to make any link with today look weaker than it really is. One honest caveat: the by-eye colours for that check were given by an AI model (Claude) looking at the magnified crops, not by me or another person, so a human check is still to come.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Two maps of the same streets</h2>
+<!-- /wp:heading -->
+
+{{IMG|b_map.png|Two maps of inner London side by side: on the left streets coloured in Booth's seven colours, with yellow concentrated in the West End and blues scattered in the East End and south; on the right small areas shaded by deprivation in 2025, darkest in the east and north|Left: Booth's colours read along today's streets. Right: the Index of Multiple Deprivation 2025 for the same small areas, darkest where most deprived.}}
+
+<!-- wp:paragraph -->
+<p>Of the street length with a colour, {{streets.poor_pc|f1}}% is black, dark blue or light blue, the three colours Booth used for poverty, and {{streets.share.purple|f1}}% is purple. For today I used the English Indices of Deprivation 2025, which score every small area of England (an LSOA, about {{pop_per_lsoa|int}} people on average here) on income, jobs, health, education, crime, housing and environment. {{n.lsoa_analysis|int}} of them sit on Booth's map with enough coloured street to compare.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">A faint yes</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Areas where more of the street was black or blue in 1899 are, on average, somewhat more deprived today. The rank correlation is {{main_rho.rho|f2}} (95% interval {{main_rho.lo|f2}} to {{main_rho.hi|f2}}). Comparing areas in the same borough, an area whose streets were all black or blue scores about {{fe_full_range_points|f1}} points higher on today's index than one with none. That is real, but modest: about {{fe_full_range_sd|f2}} of a standard deviation.</p>
+<!-- /wp:paragraph -->
+
+{{IMG|b_ends.png|Two dot charts of today's deprivation score against Booth's share of poor streets, rising gently, and against Booth's share of red and yellow streets, falling steadily|Today's deprivation score against the share of an area's streets Booth coloured black or blue (left) and red or yellow (right). Black dots: averages with 95% intervals.}}
+
+<!-- wp:paragraph -->
+<p>The wealthy end of the scale tells a clearer story. Areas where much of the street was red or yellow in 1899 are plainly less deprived now (a correlation of {{exploratory.rich_share.rho.rho|f2}}; I added this check after seeing the main result, so treat it as a lead rather than a test). Of the {{exploratory.yellow_ge_half_n|int}} areas where at least half the coloured street was yellow, in places such as Kensington, Earl's Court, Knightsbridge, Belgravia and Hampstead, {{exploratory.yellow_ge_half_d_ge8|int}} are in England's least deprived 30% today and only {{exploratory.yellow_ge_half_d12|int}} in the most deprived fifth. Wealth seems to have stayed put more than poverty has.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:pullquote -->
+<figure class="wp-block-pullquote"><blockquote><p>What lasts is not "the East End was poor". It is this side of the main road or that, this block or the next.</p></blockquote></figure>
+<!-- /wp:pullquote -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Street by street, not borough by borough</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>You might think all this just says that the East End was poor and still is. It does not. The link holds within boroughs, and the most telling check is to slide the old map out of place. Compare each area with Booth's colours 500 m away and the correlation falls to {{shift.500.rho_mean|f2}}; at 1 km it is {{shift.1000.rho_mean|f2}}, and at 2 km it is gone ({{shift.2000.rho_mean|f2}}). What has lasted is a very local pattern.</p>
+<!-- /wp:paragraph -->
+
+{{IMG|b_shift.png|Line chart: the correlation between Booth's map and deprivation today falls steeply as the old map is moved 500 m, 1 km, 2 km and 4 km away from each area|The correlation with deprivation today when Booth's map is slid away from each area. Shaded: the range over eight directions.}}
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Stuck, turned around and fallen</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Correlations hide the stories. Of the fifth of areas with the most poor street on Booth's map, {{groups.persistent.n|int}} are in England's most deprived fifth today, {{groups.persistent.boroughs.Tower Hamlets|int}} of them in Tower Hamlets, around Bethnal Green, Bow Common and Limehouse, with others around Lisson Grove and Kensal Town. Another {{groups.turned.n|int}} have turned around and sit in the less deprived half of England: many lie along the river, around Rotherhithe, Nine Elms, Sands End and Putney, where docks and wharves once stood. And {{groups.fallen.n|int}} areas where Booth coloured no street poor at all are among England's most deprived fifth now, {{fallen_hic|int}} of them in Hackney, Islington and Camden.</p>
+<!-- /wp:paragraph -->
+
+{{IMG|b_groups.png|Map of inner London picking out three groups of small areas: dark red ones in the East End and North Kensington that were poor then and are deprived now, blue ones along the river that were poor then and are not now, and orange ones, many in Islington, Hackney and Camden, that had no poor streets then but are deprived now|Dark red: poorest fifth on Booth's map and most deprived fifth of England today. Blue: poorest fifth then, least deprived half now. Orange: no poor street then, most deprived fifth now.}}
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">How sure is this?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>I wrote down the whole analysis before joining the two maps, and it mostly holds up. Counting purple as poor makes the link stronger ({{purple.rho|f2}}). So does using Booth's whole seven-step scale ({{mean_score.rho|f2}}, negative because a higher Booth score means wealthier). Dropping any one borough leaves the correlation between {{loo.rho_min|f2}} and {{loo.rho_max|f2}}. Two things weaken it. A model that allows for the way both maps cluster shrinks the within-borough effect to {{spatial_error.b|f2}} points per 10 percentage points (still above zero). And south of the Thames on its own there is no clear link at all ({{thames.south.rho|f2}}, interval {{thames.south.rho_lo|f2}} to {{thames.south.rho_hi|f2}}).</p>
+<!-- /wp:paragraph -->
+
+{{IMG|b_robust.png|Chart of correlation estimates with 95% intervals for the main result and each planned check, most between 0.15 and 0.35, with south of the Thames crossing zero|The main result and each planned check, with 95% intervals.}}
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">How I did this</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The Booth map comes from LSE Library's Charles Booth's London, whose digitised maps carry the Public Domain Mark, through the georeferenced tiles of Layers of London. Every pixel was sorted into paper, grey base map or one of Booth's inks by its colour, and each OpenStreetMap street was read 7 to 16 m either side of its centre line. Streets were then split at the boundaries of the 2021 small areas, and each area got the share of its coloured street length in the three poor colours. The comparison is with the 2025 Index of Multiple Deprivation, by rank correlation, by a regression within boroughs with errors clustered by neighbourhood, and with a spatial model. I fixed the two weaknesses of a first version of the colour reading on one sample checked by eye before joining any deprivation data, and then measured its accuracy on a fresh one.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>This is not the first look at Booth's legacy. In 2000 Danny Dorling and colleagues matched Booth's survey to 132 of the 1991 wards of inner London and found poverty then and poverty in 1991 closely linked (a correlation of 0.73), with some causes of death in the 1990s better predicted by Booth's map than by the 1991 census. Wards are much bigger than the small areas here, and their index used the whole of Booth's scale, both of which make a stronger link more likely; the paper sets out the earlier work in full.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>This compares places, not families, so it cannot say why some streets stayed poor: council building, bombing, slum clearance, the closing of the docks and the housing market all sit between the two maps. Booth's colours were judgements by his investigators, and the 2025 index is a ranking of places within England, not a measure of the same thing. The map covers inner London only.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://maps.tristanhotham.com/booth-today/">Explore the interactive version</a></div>
+<!-- /wp:button -->
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://doi.org/10.5281/zenodo.24115200">Read the paper</a></div>
+<!-- /wp:button -->
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://github.com/Tristan-Hotham/booth-today">Data and code</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Notes and sources</h3>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li>Booth's map: Descriptive Map of London Poverty, 1898 to 1899, LSE Library, Charles Booth's London (booth.lse.ac.uk), Public Domain Mark; georeferenced tiles via Layers of London and Humap. Legend wording as transcribed by The National Archives.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li>Streets: © OpenStreetMap contributors (ODbL). Base map of the interactive page: OpenFreeMap Positron.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li>Deprivation: English Indices of Deprivation 2025 (Ministry of Housing, Communities and Local Government, Open Government Licence v3.0). Small area boundaries: ONS Open Geography Portal (OGL v3.0). Neighbourhood names: Wikidata (CC0).</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li>I wrote the text, with drafting and editing assistance from Claude (Anthropic), which also helped prepare the analysis code. I reviewed and checked all text and results.</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->

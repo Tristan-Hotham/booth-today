@@ -1,0 +1,66 @@
+<body>
+<div class="topbar">
+  <a class="tb-name" href="#mapWrap">Booth's poverty map today</a>
+  <span class="tb-k">Data study · 2026</span>
+  <nav class="tb-links"><a href="#essay">About</a><button class="theme" id="theme" aria-label="Toggle dark mode">◐</button><a href="https://doi.org/10.5281/zenodo.24115200">Paper</a><a class="x" href="%%REPO%%">Data and code</a></nav>
+</div>
+<div class="mapband">
+  <div class="pane" id="mapWrap" data-fullscreen-map role="application" aria-label="Map of inner London: Booth's 1898 to 1899 poverty colours along today's streets and the Index of Multiple Deprivation 2025 by small area">
+    <div id="map"></div>
+    <div class="nojs" id="nojs">Loading the map. It needs JavaScript and WebGL.</div>
+    <div class="cartouche" id="cartouche">
+      <button class="ct-toggle" id="ctToggle" aria-expanded="true" title="Show the title">Booth's poverty map today <span aria-hidden="true">▾</span></button>
+      <button class="ct-fold" id="ctFold" title="Fold the title" aria-label="Fold the title">▴</button>
+      <div class="ct-body">
+        <div class="kicker"><b>Data study</b><span>2026</span></div>
+        <h1>Booth's poverty map <span class="a">today</span></h1>
+        <p class="dek">Charles Booth's colours of 1898 to 1899 read along every street of today's inner London, against deprivation in 2025. Slide between then and now; tap a street or an area.</p>
+        <div class="byline">%%BYLINE%%</div>
+      </div>
+    </div>
+    <div class="ov ov-top">
+      <div class="srch"><input type="search" id="q" placeholder="Find a street or neighbourhood" aria-label="Find a street or neighbourhood" autocomplete="off"><ul class="sug" id="sug" role="listbox"></ul></div>
+      <div class="chips"><button class="chip" data-mix="0">Then</button><button class="chip" data-mix="0.5">Both</button><button class="chip" data-mix="1">Now</button><button class="chip lyr" id="lyrBtn" aria-expanded="false" aria-controls="lp">Layers</button></div>
+    </div>
+    <div class="lp" id="lp" role="dialog" aria-label="Map layers">
+      <h4>Layers</h4>
+      <label><input type="checkbox" id="lyS" checked> Booth's colours along today's streets</label>
+      <label><input type="checkbox" id="lyI" checked> Deprivation 2025 (IMD decile)</label>
+      <label><input type="checkbox" id="lyA" checked> Outline of the areas analysed</label>
+      <label><input type="checkbox" id="lyG"> Stuck, turned around and fallen</label>
+      <label><input type="checkbox" id="lyB" checked> Booth's original map (zoom in)</label>
+      <label style="display:block;padding-left:24px">Opacity<input type="range" id="opB" min="0.2" max="1" step="0.05" value="0.6" aria-label="Opacity of Booth's original map"></label>
+      <label><input type="checkbox" id="lyL" checked> Base map place names</label>
+      <h5>Coverage</h5>
+      <p style="margin:4px 0 0;font-size:12px;color:#6E604E">Booth's 1898 to 1899 map covers inner London only: from Hammersmith to Greenwich, Hampstead to Brixton. Streets are coloured only where they lie on the map and the colour could be read. The thin brown outline marks the %%NLSOA%% areas analysed.</p>
+    </div>
+    <div class="keys" id="keys"><div class="key">
+      <b>Booth, 1898 to 1899</b>
+      %%KEYROWS%%
+      <b style="margin-top:6px">Deprivation, 2025</b>
+      <div class="row"><span class="sw" style="background:linear-gradient(90deg,#4A1426,#8F3046,#C66B76,#E5AEB2,#F1DCD8);width:110px"></span></div>
+      <div class="ends"><span>most deprived</span><span>least</span></div>
+      <div id="keyG" hidden><div class="row"><span class="sw" style="border:2px solid #4A1426;background:none"></span>stuck</div><div class="row"><span class="sw" style="border:2px solid #2F7FB8;background:none"></span>turned around</div><div class="row"><span class="sw" style="border:2px solid #D08A1E;background:none"></span>fallen</div></div>
+      <div id="boothNote" class="row" style="color:#6E604E">Original: LSE Library, via Layers of London</div>
+    </div></div>
+    <div class="tl" id="tl" role="group" aria-label="Then or now">
+      <span class="eyel" id="mixTxt">Booth, 1898 to 1899</span>
+      <span class="sm">1899</span><input type="range" id="mix" min="0" max="1" step="0.05" value="0" aria-label="Fade between Booth's map and deprivation in 2025"><span class="sm">2025</span>
+    </div>
+  </div>
+</div>
+<div class="wrap" id="essay">
+%%ESSAY%%
+<footer>
+<p>Dr Tristan Hotham, Independent researcher. ORCID <a href="https://orcid.org/0000-0003-4931-9349">0000-0003-4931-9349</a>.</p>
+<p>Cite as: Hotham, T. (2026) Booth's poverty map today: street-level persistence of poverty in inner London, 1898 to 2025. Zenodo. <a href="https://doi.org/10.5281/zenodo.24115200">10.5281/zenodo.24115200</a></p>
+<p>Code: <a href="%%REPO%%">github.com/Tristan-Hotham/booth-today</a> (MIT). Text and figures CC BY 4.0. The street classification is derived from OpenStreetMap and shared under the ODbL. Booth's map: LSE Library, Charles Booth's London (Public Domain Mark), shown here from the Layers of London tiles; it is not redistributed with this study.</p>
+<p>%%AI%%</p>
+</footer>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+<script src="js/page.js?v=%%VERSION%%"></script>
+%%FULLSCREEN%%
+<script src="https://maps.tristanhotham.com/assets/site-nav.js" defer></script>
+</body>
+</html>

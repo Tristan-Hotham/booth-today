@@ -1,0 +1,639 @@
+{
+ "n": {
+  "lsoa_london": 4994,
+  "lsoa_touching": 1464,
+  "lsoa_cov90": 1310,
+  "lsoa_analysis": 1221,
+  "blocks": 205,
+  "msoa": 278,
+  "boroughs": 17,
+  "pop2022": 2134501
+ },
+ "main_rho": {
+  "rho": 0.203,
+  "lo": 0.134,
+  "hi": 0.267,
+  "n": 1221
+ },
+ "main_fe": {
+  "b": 0.688,
+  "se": 0.26,
+  "lo": 0.178,
+  "hi": 1.198,
+  "p": 0.008183836761346288,
+  "n": 1221,
+  "r2": 0.191,
+  "r2_within_add": null,
+  "b_nofe": 0.807,
+  "lo_nofe": 0.251,
+  "hi_nofe": 1.363,
+  "r2_nofe": 0.017
+ },
+ "main_fe_z": {
+  "b": 0.063,
+  "se": 0.024,
+  "lo": 0.016,
+  "hi": 0.11,
+  "p": 0.00818383676134548,
+  "n": 1221,
+  "r2": 0.191,
+  "r2_within_add": null,
+  "b_nofe": 0.074,
+  "lo_nofe": 0.023,
+  "hi_nofe": 0.126,
+  "r2_nofe": 0.017
+ },
+ "moran": {
+  "booth": {
+   "I": 0.298,
+   "p": 0.001
+  },
+  "imd": {
+   "I": 0.413,
+   "p": 0.001
+  },
+  "resid": {
+   "I": 0.281,
+   "p": 0.001
+  }
+ },
+ "spatial_error": {
+  "b": 0.404,
+  "se": 0.17,
+  "lo": 0.07,
+  "hi": 0.738,
+  "lambda": 0.644,
+  "n": 1221
+ },
+ "robust": [
+  {
+   "label": "R1 purple counted as poor",
+   "x": "poor_purple_share",
+   "y": "imd_score",
+   "planned": true,
+   "rho": {
+    "rho": 0.334,
+    "lo": 0.267,
+    "hi": 0.403,
+    "n": 1221
+   },
+   "fe": {
+    "b": 0.928,
+    "se": 0.153,
+    "lo": 0.628,
+    "hi": 1.228,
+    "p": 1.323805493487129e-09,
+    "n": 1221,
+    "r2": 0.234,
+    "r2_within_add": null,
+    "b_nofe": 1.125,
+    "lo_nofe": 0.843,
+    "hi_nofe": 1.407,
+    "r2_nofe": 0.101
+   }
+  },
+  {
+   "label": "R2 mean Booth score (1 black to 7 yellow)",
+   "x": "mean_score",
+   "y": "imd_score",
+   "planned": true,
+   "rho": {
+    "rho": -0.373,
+    "lo": -0.435,
+    "hi": -0.293,
+    "n": 1221
+   },
+   "fe": {
+    "b": -4.48,
+    "se": 0.589,
+    "lo": -5.636,
+    "hi": -3.325,
+    "p": 2.9527739631598623e-14,
+    "n": 1221,
+    "r2": 0.268,
+    "r2_within_add": null,
+    "b_nofe": -4.588,
+    "lo_nofe": -5.619,
+    "hi_nofe": -3.557,
+    "r2_nofe": 0.129
+   }
+  },
+  {
+   "label": "R3 map area instead of streets",
+   "x": "area_poor_share",
+   "y": "imd_score",
+   "planned": true,
+   "rho": {
+    "rho": 0.165,
+    "lo": 0.087,
+    "hi": 0.24,
+    "n": 1221
+   },
+   "fe": {
+    "b": 0.631,
+    "se": 0.247,
+    "lo": 0.147,
+    "hi": 1.116,
+    "p": 0.010659669182706059,
+    "n": 1221,
+    "r2": 0.191,
+    "r2_within_add": null,
+    "b_nofe": 0.739,
+    "lo_nofe": 0.235,
+    "hi_nofe": 1.243,
+    "r2_nofe": 0.017
+   }
+  },
+  {
+   "label": "R4 streets with purity at least 0.6",
+   "x": "hp_poor_share",
+   "y": "imd_score",
+   "planned": true,
+   "rho": {
+    "rho": 0.188,
+    "lo": 0.108,
+    "hi": 0.251,
+    "n": 1217
+   },
+   "fe": {
+    "b": 0.7,
+    "se": 0.279,
+    "lo": 0.152,
+    "hi": 1.247,
+    "p": 0.01225415433190939,
+    "n": 1217,
+    "r2": 0.189,
+    "r2_within_add": null,
+    "b_nofe": 0.849,
+    "lo_nofe": 0.262,
+    "hi_nofe": 1.437,
+    "r2_nofe": 0.017
+   }
+  },
+  {
+   "label": "R5 fully covered, at least 500 m classified",
+   "x": "poor_share",
+   "y": "imd_score",
+   "planned": true,
+   "rho": {
+    "rho": 0.238,
+    "lo": 0.16,
+    "hi": 0.307,
+    "n": 1135
+   },
+   "fe": {
+    "b": 1.076,
+    "se": 0.287,
+    "lo": 0.513,
+    "hi": 1.638,
+    "p": 0.00017801344833294784,
+    "n": 1135,
+    "r2": 0.21,
+    "r2_within_add": null,
+    "b_nofe": 1.298,
+    "lo_nofe": 0.725,
+    "hi_nofe": 1.872,
+    "r2_nofe": 0.038
+   }
+  },
+  {
+   "label": "R6a income domain score",
+   "x": "poor_share",
+   "y": "income_score",
+   "planned": true,
+   "rho": {
+    "rho": 0.243,
+    "lo": 0.176,
+    "hi": 0.308,
+    "n": 1221
+   },
+   "fe": {
+    "b": 0.011,
+    "se": 0.003,
+    "lo": 0.004,
+    "hi": 0.018,
+    "p": 0.0010764132748918734,
+    "n": 1221,
+    "r2": 0.249,
+    "r2_within_add": null,
+    "b_nofe": 0.015,
+    "lo_nofe": 0.007,
+    "hi_nofe": 0.023,
+    "r2_nofe": 0.034
+   }
+  },
+  {
+   "label": "R6b IMD national rank (most deprived high)",
+   "x": "poor_share",
+   "y": "imd_rank_rev",
+   "planned": true,
+   "rho": {
+    "rho": 0.203,
+    "lo": 0.13,
+    "hi": 0.268,
+    "n": 1221
+   },
+   "fe": {
+    "b": 371.984,
+    "se": 164.852,
+    "lo": 48.88,
+    "hi": 695.089,
+    "p": 0.02404128843158667,
+    "n": 1221,
+    "r2": 0.204,
+    "r2_within_add": null,
+    "b_nofe": 411.011,
+    "lo_nofe": 47.087,
+    "hi_nofe": 774.934,
+    "r2_nofe": 0.01
+   }
+  },
+  {
+   "label": "R8a north of the Thames",
+   "x": "poor_share",
+   "y": "imd_score",
+   "planned": true,
+   "rho": {
+    "rho": 0.247,
+    "lo": 0.168,
+    "hi": 0.324,
+    "n": 809
+   },
+   "fe": {
+    "b": 0.893,
+    "se": 0.344,
+    "lo": 0.218,
+    "hi": 1.568,
+    "p": 0.009513413568273617,
+    "n": 809,
+    "r2": 0.167,
+    "r2_within_add": null,
+    "b_nofe": 1.076,
+    "lo_nofe": 0.367,
+    "hi_nofe": 1.785,
+    "r2_nofe": 0.03
+   }
+  },
+  {
+   "label": "R8b south of the Thames",
+   "x": "poor_share",
+   "y": "imd_score",
+   "planned": true,
+   "rho": {
+    "rho": 0.093,
+    "lo": -0.026,
+    "hi": 0.213,
+    "n": 412
+   },
+   "fe": {
+    "b": 0.195,
+    "se": 0.287,
+    "lo": -0.367,
+    "hi": 0.757,
+    "p": 0.4967046147932648,
+    "n": 412,
+    "r2": 0.208,
+    "r2_within_add": null,
+    "b_nofe": -0.188,
+    "lo_nofe": -0.903,
+    "hi_nofe": 0.527,
+    "r2_nofe": 0.001
+   }
+  },
+  {
+   "label": "R8c without the City of London",
+   "x": "poor_share",
+   "y": "imd_score",
+   "planned": true,
+   "rho": {
+    "rho": 0.205,
+    "lo": 0.133,
+    "hi": 0.268,
+    "n": 1218
+   },
+   "fe": {
+    "b": 0.7,
+    "se": 0.264,
+    "lo": 0.182,
+    "hi": 1.217,
+    "p": 0.008043375645694626,
+    "n": 1218,
+    "r2": 0.189,
+    "r2_within_add": null,
+    "b_nofe": 0.854,
+    "lo_nofe": 0.289,
+    "hi_nofe": 1.42,
+    "r2_nofe": 0.019
+   }
+  },
+  {
+   "label": "Window-mode classifier (first version)",
+   "x": "wmode_poor_share",
+   "y": "imd_score",
+   "planned": false,
+   "rho": {
+    "rho": 0.194,
+    "lo": 0.127,
+    "hi": 0.254,
+    "n": 1221
+   },
+   "fe": {
+    "b": 0.609,
+    "se": 0.265,
+    "lo": 0.088,
+    "hi": 1.129,
+    "p": 0.02184267700256324,
+    "n": 1221,
+    "r2": 0.189,
+    "r2_within_add": null,
+    "b_nofe": 0.767,
+    "lo_nofe": 0.206,
+    "hi_nofe": 1.328,
+    "r2_nofe": 0.015
+   }
+  }
+ ],
+ "exploratory": {
+  "rich_share": {
+   "rho": {
+    "rho": -0.355,
+    "lo": -0.425,
+    "hi": -0.286,
+    "n": 1221
+   },
+   "fe": {
+    "b": -1.163,
+    "se": 0.141,
+    "lo": -1.438,
+    "hi": -0.887,
+    "p": 1.334421167221041e-16,
+    "n": 1221,
+    "r2": 0.271,
+    "r2_within_add": null,
+    "b_nofe": -1.218,
+    "lo_nofe": -1.458,
+    "hi_nofe": -0.978,
+    "r2_nofe": 0.127
+   }
+  },
+  "yellow_share": {
+   "rho": {
+    "rho": -0.374,
+    "lo": -0.439,
+    "hi": -0.308,
+    "n": 1221
+   },
+   "fe": {
+    "b": -1.64,
+    "se": 0.257,
+    "lo": -2.143,
+    "hi": -1.137,
+    "p": 1.6799201448213028e-10,
+    "n": 1221,
+    "r2": 0.249,
+    "r2_within_add": null,
+    "b_nofe": -1.75,
+    "lo_nofe": -2.111,
+    "hi_nofe": -1.389,
+    "r2_nofe": 0.098
+   }
+  },
+  "has_yellow_n": 239,
+  "yellow_ge_half_n": 74,
+  "yellow_ge_half_d12": 4,
+  "yellow_ge_half_d_ge8": 34,
+  "yellow_ge_half_mean_imd": 14.42
+ },
+ "loo": {
+  "rows": [
+   {
+    "left_out": "Southwark",
+    "rho": 0.209,
+    "b": 0.763,
+    "lo": 0.194,
+    "hi": 1.332
+   },
+   {
+    "left_out": "Tower Hamlets",
+    "rho": 0.171,
+    "b": 1.203,
+    "lo": 0.594,
+    "hi": 1.813
+   },
+   {
+    "left_out": "Westminster",
+    "rho": 0.193,
+    "b": 0.484,
+    "lo": 0.02,
+    "hi": 0.948
+   },
+   {
+    "left_out": "Camden",
+    "rho": 0.188,
+    "b": 0.602,
+    "lo": 0.087,
+    "hi": 1.116
+   },
+   {
+    "left_out": "Hackney",
+    "rho": 0.215,
+    "b": 0.715,
+    "lo": 0.178,
+    "hi": 1.252
+   },
+   {
+    "left_out": "Islington",
+    "rho": 0.214,
+    "b": 0.714,
+    "lo": 0.171,
+    "hi": 1.258
+   },
+   {
+    "left_out": "Lambeth",
+    "rho": 0.214,
+    "b": 0.713,
+    "lo": 0.184,
+    "hi": 1.242
+   },
+   {
+    "left_out": "Hammersmith and Fulham",
+    "rho": 0.196,
+    "b": 0.587,
+    "lo": 0.041,
+    "hi": 1.133
+   },
+   {
+    "left_out": "Kensington and Chelsea",
+    "rho": 0.184,
+    "b": 0.477,
+    "lo": -0.008,
+    "hi": 0.962
+   },
+   {
+    "left_out": "Wandsworth",
+    "rho": 0.214,
+    "b": 0.76,
+    "lo": 0.213,
+    "hi": 1.307
+   },
+   {
+    "left_out": "Lewisham",
+    "rho": 0.206,
+    "b": 0.701,
+    "lo": 0.183,
+    "hi": 1.218
+   }
+  ],
+  "rho_min": 0.171,
+  "rho_max": 0.215,
+  "b_min": 0.477,
+  "b_max": 1.203
+ },
+ "crosstab": {
+  "1": {
+   "1": 12,
+   "2": 65,
+   "3": 98,
+   "4": 93,
+   "5": 83,
+   "6": 80,
+   "7": 56,
+   "8": 49,
+   "9": 35,
+   "10": 8
+  },
+  "2": {
+   "1": 5,
+   "2": 27,
+   "3": 38,
+   "4": 25,
+   "5": 22,
+   "6": 14,
+   "7": 8,
+   "8": 14,
+   "9": 8,
+   "10": 0
+  },
+  "3": {
+   "1": 6,
+   "2": 34,
+   "3": 37,
+   "4": 31,
+   "5": 17,
+   "6": 16,
+   "7": 6,
+   "8": 6,
+   "9": 7,
+   "10": 0
+  },
+  "4": {
+   "1": 10,
+   "2": 25,
+   "3": 38,
+   "4": 33,
+   "5": 14,
+   "6": 12,
+   "7": 13,
+   "8": 10,
+   "9": 5,
+   "10": 0
+  },
+  "5": {
+   "1": 16,
+   "2": 35,
+   "3": 35,
+   "4": 21,
+   "5": 16,
+   "6": 6,
+   "7": 9,
+   "8": 15,
+   "9": 5,
+   "10": 3
+  }
+ },
+ "quintile_cut": [
+  0.0,
+  0.0014,
+  0.0533,
+  0.1345,
+  0.2812
+ ],
+ "quintile_mean_imd": {
+  "1": 21.76,
+  "2": 24.46,
+  "3": 26.28,
+  "4": 25.97,
+  "5": 27.61
+ },
+ "quintile_share_d12": {
+  "1": 13.3,
+  "2": 19.9,
+  "3": 25.0,
+  "4": 21.9,
+  "5": 31.7
+ },
+ "groups": {
+  "persistent": {
+   "n": 72,
+   "boroughs": {
+    "Tower Hamlets": 32,
+    "Westminster": 9,
+    "Kensington and Chelsea": 8,
+    "Hackney": 6,
+    "Islington": 5,
+    "Camden": 3,
+    "Greenwich": 2,
+    "Hammersmith and Fulham": 2,
+    "Lambeth": 2,
+    "Southwark": 2,
+    "Lewisham": 1
+   }
+  },
+  "turned": {
+   "n": 58,
+   "boroughs": {
+    "Tower Hamlets": 12,
+    "Wandsworth": 12,
+    "Southwark": 7,
+    "Hammersmith and Fulham": 5,
+    "Westminster": 5,
+    "Hounslow": 4,
+    "Lambeth": 4,
+    "Hackney": 2,
+    "Islington": 2,
+    "Lewisham": 2,
+    "City of London": 1,
+    "Kensington and Chelsea": 1,
+    "Richmond upon Thames": 1
+   }
+  },
+  "fallen": {
+   "n": 77,
+   "boroughs": {
+    "Tower Hamlets": 15,
+    "Hackney": 14,
+    "Islington": 13,
+    "Camden": 12,
+    "Westminster": 8,
+    "Lambeth": 6,
+    "Lewisham": 4,
+    "Kensington and Chelsea": 2,
+    "Southwark": 2,
+    "Hammersmith and Fulham": 1
+   }
+  }
+ },
+ "bq_n": {
+  "1": 579,
+  "2": 161,
+  "3": 160,
+  "4": 160,
+  "5": 161
+ },
+ "top20_n": 244,
+ "top20_min": 18.9,
+ "imd_d12_share_all": 19.2,
+ "imd_d1_n": 49,
+ "poor_share_mean": 10.6,
+ "lsoa_no_poor": 579
+}
