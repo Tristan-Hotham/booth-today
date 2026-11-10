@@ -1,0 +1,126 @@
+{
+ "set": "test",
+ "uncoloured_pred": 0,
+ "n": 200,
+ "unclear": 23,
+ "n_scored": 177,
+ "n_mixed": 23,
+ "exact": 130,
+ "exact_pc": 73.4,
+ "within1": 165,
+ "within1_pc": 93.2,
+ "poor": {
+  "tp": 13,
+  "fp": 0,
+  "fn": 17,
+  "tn": 147,
+  "agree_pc": 90.4,
+  "sensitivity_pc": 43.3,
+  "precision_pc": 100.0
+ },
+ "poor_single": {
+  "n_poor": 11,
+  "found": 8,
+  "n_notpoor": 143,
+  "false_poor": 0
+ },
+ "by_label": {
+  "black": {
+   "n": 0,
+   "correct": 0
+  },
+  "dkblue": {
+   "n": 2,
+   "correct": 1
+  },
+  "ltblue": {
+   "n": 9,
+   "correct": 6
+  },
+  "purple": {
+   "n": 52,
+   "correct": 34
+  },
+  "pink": {
+   "n": 34,
+   "correct": 28
+  },
+  "red": {
+   "n": 39,
+   "correct": 28
+  },
+  "yellow": {
+   "n": 18,
+   "correct": 16
+  }
+ },
+ "purple_pink": {
+  "n": 86,
+  "swapped": 16
+ },
+ "confusion": {
+  "black": {
+   "black": 0,
+   "dkblue": 0,
+   "ltblue": 0,
+   "purple": 0,
+   "pink": 0,
+   "red": 0,
+   "yellow": 0
+  },
+  "dkblue": {
+   "black": 0,
+   "dkblue": 1,
+   "ltblue": 0,
+   "purple": 1,
+   "pink": 0,
+   "red": 0,
+   "yellow": 0
+  },
+  "ltblue": {
+   "black": 0,
+   "dkblue": 1,
+   "ltblue": 6,
+   "purple": 0,
+   "pink": 2,
+   "red": 0,
+   "yellow": 0
+  },
+  "purple": {
+   "black": 0,
+   "dkblue": 0,
+   "ltblue": 0,
+   "purple": 34,
+   "pink": 13,
+   "red": 5,
+   "yellow": 0
+  },
+  "pink": {
+   "black": 0,
+   "dkblue": 0,
+   "ltblue": 0,
+   "purple": 3,
+   "pink": 28,
+   "red": 3,
+   "yellow": 0
+  },
+  "red": {
+   "black": 0,
+   "dkblue": 0,
+   "ltblue": 0,
+   "purple": 4,
+   "pink": 6,
+   "red": 28,
+   "yellow": 1
+  },
+  "yellow": {
+   "black": 0,
+   "dkblue": 0,
+   "ltblue": 0,
+   "purple": 0,
+   "pink": 0,
+   "red": 2,
+   "yellow": 16
+  }
+ }
+}

@@ -1,0 +1,17 @@
+{
+  "title": "Booth's poverty map today",
+  "slug": "booth-today",
+  "excerpt": "I read Charles Booth's 1898 to 1899 poverty colours along every street of today's inner London and set them against deprivation in 2025. The poorer streets of the 1890s are still slightly more deprived (rank correlation 0.20), and only very locally: slide the old map 1 km and most of the link goes.",
+  "seo_description": "Are London's poorest streets of the 1890s still the poorest? Booth's poverty map read street by street against deprivation in 2025.",
+  "tags": [
+    "maps",
+    "data visualisation",
+    "London",
+    "Charles Booth",
+    "poverty",
+    "deprivation",
+    "history",
+    "historical GIS"
+  ],
+  "header_alt": "Title card on pale paper reading 'Booth's poverty map today' beside a map of central London streets drawn in Booth's colours: yellow in the West End, reds and pinks across the city, blues and purples in the east."
+}

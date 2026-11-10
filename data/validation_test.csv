@@ -1,0 +1,201 @@
+i,osm_id,label,name,booth,purity,length_m
+0,24498144,ltblue,Glengarnock Avenue,ltblue,1.0,126.7
+1,4898588,yellow,Tulse Hill,yellow,0.743,896.0
+2,3997557,pink,St Dunstan's Road,red,0.982,166.4
+3,5045523,pink,Shakespeare Road,pink,0.994,299.1
+4,47438384,red,Shepherd Street,pink,0.949,64.5
+5,618689443,mixed:dkblue+black,Hamlets Way,ltblue,0.523,80.4
+6,956043078,yellow,Belsize Park Gardens,yellow,0.997,417.1
+7,4422816,purple,Elm Place,pink,0.986,120.0
+8,244343861,ltblue,Strasburg Road,ltblue,0.903,86.0
+9,9351585,unclear,Arnould Avenue,yellow,1.0,157.2
+10,1004755340,purple,St. Agnes Place,purple,0.991,54.4
+11,33287445,unclear,Greenwich Church Street,purple,1.0,40.8
+12,8392423,pink,Lancelot Place,pink,0.997,130.1
+13,1062357000,red,East India Dock Road,red,1.0,30.9
+14,5026510,pink,Old Road,pink,0.971,65.9
+15,4774389,yellow,Sussex Place,red,0.797,62.0
+16,5931080,mixed:ltblue+purple,Treadway Street,ltblue,0.595,70.2
+17,1069976324,ltblue,Tower Bridge Road,pink,0.693,77.0
+18,23281558,red,Vale of Health,purple,0.998,64.2
+19,722312709,pink,Tintern Street,pink,1.0,60.0
+20,5548893,red,Lyndhurst Square,red,0.99,130.7
+21,22697289,purple,St Peter's Road,purple,0.788,128.4
+22,4976040,purple,Nursery Road,purple,0.989,88.8
+23,536465283,purple,Winchester Street,red,0.956,36.2
+24,663502520,red,Earl's Court Road,red,0.855,73.3
+25,25621804,mixed:ltblue+purple,Morris Street,ltblue,0.582,85.0
+26,156872568,purple,Hanbury Street,purple,0.989,161.6
+27,909518387,mixed:purple+ltblue,Wilton Road,pink,0.982,234.6
+28,8875215,red,Endwell Road,red,0.99,72.2
+29,38310799,red,Woodstock Street,pink,0.944,61.0
+30,437142002,purple,Drury Lane,purple,0.996,133.6
+31,8156704,yellow,Nevern Square,yellow,0.995,113.9
+32,64972121,ltblue,Bittern Street,ltblue,0.946,126.6
+33,8383621,purple,Stoke Newington Common,purple,0.985,53.8
+34,31435295,red,Kendall Place,purple,0.999,80.1
+35,47007862,red,Margaret Street,red,1.0,29.9
+36,3995467,yellow,Kensington Gore,yellow,0.941,88.5
+37,4362895,yellow,Cadogan Gardens,yellow,1.0,101.2
+38,201472494,red,,red,1.0,33.3
+39,907575325,unclear,Pimlico Road,ltblue,0.522,42.9
+40,823303014,mixed:dkblue+purple,Norman Road,purple,0.835,77.9
+41,147378801,pink,Upper Brockley Road,pink,1.0,67.6
+42,5155743,pink,Rosenthorpe Road,red,0.993,171.5
+43,10401890,purple,Lawrence Street,purple,0.882,141.7
+44,4798899,red,Mercers Road,red,1.0,122.4
+45,823536447,purple,Adam and Eve Mews,purple,0.885,37.1
+46,964009828,purple,Twelvetrees Crescent,purple,0.987,33.9
+47,4232983,yellow,Howick Place,yellow,0.996,145.1
+48,29017841,ltblue,Trego Road,ltblue,0.938,160.2
+49,26231878,pink,Bushbaby Close,pink,1.0,53.0
+50,955518102,red,Oxford Street,red,0.999,77.6
+51,5319041,unclear,Christchurch Street,pink,0.936,313.8
+52,681006020,pink,Sharratt Street,purple,1.0,86.8
+53,971649746,purple,East Smithfield,purple,0.963,48.9
+54,626784637,purple,Southampton Way,pink,0.842,88.7
+55,11849428,unclear,Sunset Road,yellow,0.998,220.5
+56,156886333,mixed:black+pink,Brick Lane,pink,0.824,57.7
+57,16769328,purple,Hazlewood Crescent,purple,0.864,136.9
+58,31171078,unclear,Ash Grove,purple,0.994,53.0
+59,27237211,mixed:ltblue+dkblue,Daventry Street,ltblue,0.915,83.8
+60,4362701,red,Jermyn Street,red,0.998,279.2
+61,204336544,mixed:purple+ltblue,Gillender Street,purple,0.951,53.6
+62,24160211,purple,Meadow Place,purple,0.984,119.9
+63,8496967,purple,Heygate Street,purple,1.0,31.9
+64,536779032,pink,Royal Hospital Road,pink,0.95,93.4
+65,975429216,red,Temple Place,red,0.993,71.1
+66,8125304,pink,Wandsworth Bridge Road,pink,0.993,128.3
+67,19212466,purple,New Cavendish Street,purple,0.991,122.7
+68,23069711,mixed:dkblue+ltblue,Tidey Street,dkblue,1.0,63.7
+69,5028145,mixed:pink+red,Pimaston Road,pink,0.996,63.3
+70,438319268,red,Hunter Street,red,1.0,78.7
+71,6250369,dkblue,Ramsgate Street,purple,0.739,122.3
+72,3784337,pink,Glendarvon Street,pink,0.998,149.0
+73,5884912,unclear,Pear Tree Close,ltblue,1.0,51.5
+74,61977973,red,Kilburn High Road,red,0.917,289.8
+75,1462354003,pink,Thornhill Road,pink,1.0,76.4
+76,907904300,ltblue,Cannon Street Road,pink,0.756,36.9
+77,494303758,purple,Edward Street,purple,0.994,40.4
+78,17944922,yellow,Stanhope Place,yellow,0.944,54.5
+79,3088286,purple,Cockpit Yard,purple,1.0,71.8
+80,1454112531,pink,Fleet Road,pink,0.998,92.0
+81,27396872,pink,Upland Road,pink,0.995,1034.3
+82,63951362,yellow,Bramham Gardens,yellow,0.895,138.6
+83,1120836376,pink,Brockley Cross,pink,0.96,38.6
+84,227774276,mixed:ltblue+purple,Chrisp Street,purple,0.795,183.8
+85,5028157,purple,Ravensbourne Place,purple,1.0,41.1
+86,24397756,unclear,,ltblue,0.462,62.2
+87,35583682,red,Hertford Street,yellow,0.532,67.3
+88,372794032,mixed:purple+ltblue,Blount Street,purple,0.99,72.8
+89,25995623,unclear,Bassano Street,purple,0.562,185.5
+90,507122643,mixed:purple+ltblue,Vauxhall Street,purple,0.838,129.7
+91,49797441,purple,Drury Lane,red,1.0,33.5
+92,19660282,purple,Londesborough Road,pink,0.984,206.6
+93,1107743222,red,Alpine Grove,purple,1.0,54.0
+94,746823464,red,Queen's Road,red,1.0,38.9
+95,233398754,pink,Trinity Road,pink,1.0,52.7
+96,4239896,purple,Parsons Green Lane,purple,0.94,50.7
+97,3784343,pink,Gladwyn Road,pink,0.981,147.1
+98,4365366,mixed:red+yellow,Headfort Place,pink,0.995,136.7
+99,4240561,pink,Bishop's Road,pink,0.972,112.2
+100,491816528,mixed:purple+ltblue,Courtenay Street,purple,0.877,179.3
+101,8501767,purple,Coopersale Road,pink,1.0,223.2
+102,165357292,unclear,Hogarth Lane,dkblue,1.0,431.0
+103,23601817,mixed:ltblue+purple,Walmer Road,purple,0.761,105.4
+104,87499687,purple,,purple,1.0,53.1
+105,156334674,unclear,South Lambeth Road,pink,0.986,148.7
+106,4366252,purple,Jamestown Road,purple,0.999,167.5
+107,181662425,unclear,Woodsford Square,yellow,0.999,124.4
+108,4228042,red,Lanark Place,purple,0.989,83.9
+109,12537079,red,Park Hill,red,1.0,70.1
+110,204039621,mixed:red+ltblue,East India Dock Road,pink,0.997,73.8
+111,690715414,ltblue,,dkblue,0.815,131.0
+112,197195590,unclear,Mountgrove Road,purple,0.992,367.5
+113,1454964244,pink,Palace Gardens Terrace,pink,0.998,52.3
+114,4487491,purple,Pennyfields,purple,0.976,50.6
+115,947381547,unclear,,ltblue,1.0,311.5
+116,1015370840,mixed:purple+dkblue,Stamford Street,pink,0.997,91.8
+117,507120737,red,Lambeth Walk,red,0.96,96.1
+118,8147377,yellow,Elm Park Gardens,yellow,0.974,35.5
+119,76371843,purple,Mary Seacole Close,purple,1.0,41.6
+120,30727695,pink,Canonbury Road,pink,1.0,74.6
+121,4417619,mixed:purple+dkblue,Trafalgar Gardens,purple,0.678,188.4
+122,228767989,purple,Kennington Road,purple,0.997,226.4
+123,156155840,unclear,Vere Street,red,0.91,108.6
+124,155450985,unclear,Blackfriars Road,red,1.0,37.8
+125,9349184,yellow,Estate Road,yellow,1.0,79.9
+126,156734037,red,Walterton Road,pink,0.979,136.6
+127,4196693,pink,Gillingham Street,pink,0.757,156.7
+128,4018432,red,Union Road,red,0.998,303.2
+129,11550674,purple,Holbeck Row,purple,1.0,90.4
+130,5598943,unclear,Durward Street,pink,0.989,78.8
+131,290461915,red,Swallow Street,pink,1.0,44.3
+132,157522394,unclear,Kenmont Gardens,pink,0.995,145.3
+133,109850046,pink,Swinton Street,pink,0.999,159.7
+134,49932201,red,Brunswick Square,red,1.0,94.5
+135,504284799,purple,Sussex Street,pink,0.728,41.5
+136,5649452,purple,Willard Street,pink,0.993,48.4
+137,722312712,pink,Kepler Road,pink,0.997,124.1
+138,299854452,purple,Old York Road,pink,0.993,52.6
+139,670642942,unclear,Brompton Road,yellow,0.54,36.0
+140,4471726,purple,Kingsdown Road,purple,0.992,390.2
+141,904712183,purple,Benhill Road,purple,0.998,151.1
+142,154992888,pink,Elms Mews,pink,0.919,83.5
+143,27812212,unclear,Oliver Mews,pink,0.998,113.2
+144,8501749,purple,Overbury Street,purple,1.0,100.3
+145,4202649,pink,Sutherland Street,pink,0.962,430.0
+146,30688461,red,Canonbury Place,red,1.0,56.3
+147,190084033,purple,Ordnance Crescent,purple,0.974,43.5
+148,675080634,purple,Cumberland Market,pink,1.0,67.2
+149,4486941,yellow,Hyde Park Street,yellow,0.996,110.0
+150,12537674,unclear,Patio Close,yellow,0.992,106.8
+151,11024783,purple,Octavius Street,pink,0.997,77.8
+152,542287923,pink,Frampton Park Road,pink,1.0,100.3
+153,303155477,red,Harrington Road,red,0.963,78.8
+154,1432747128,purple,Abbey Street,purple,0.998,69.3
+155,22926461,pink,Eastside Mews,purple,0.989,132.4
+156,3677770,pink,Lower Richmond Road,red,0.995,326.5
+157,4269545,yellow,Frognal Close,yellow,1.0,95.5
+158,18769862,unclear,Frognal Lane,yellow,0.997,135.4
+159,24160201,purple,Palfrey Place,pink,0.978,57.8
+160,5027693,ltblue,Malyons Terrace,ltblue,1.0,81.5
+161,876521875,mixed:purple+ltblue,Scylla Road,purple,0.981,101.9
+162,4422780,red,Redcliffe Street,red,0.705,126.2
+163,148519534,mixed:purple+ltblue,Endell Street,purple,1.0,69.8
+164,4239576,red,Rigault Road,pink,0.987,194.7
+165,27457833,red,Barbara Brosnan Court,red,0.998,51.3
+166,476448491,yellow,Manchester Square,yellow,1.0,39.8
+167,697273360,red,St Edmund's Terrace,red,0.998,214.3
+168,127925209,yellow,Addison Road,yellow,1.0,32.8
+169,663246993,red,Amhurst Road,red,1.0,31.2
+170,39250991,ltblue,Nicholas Road,ltblue,1.0,102.3
+171,749650707,purple,Kennington Road,red,1.0,68.5
+172,880973724,red,Kensington High Street,red,0.986,37.4
+173,10222581,purple,Brocklehurst Street,pink,0.997,461.2
+174,663502534,yellow,Courtfield Gardens,yellow,0.778,126.3
+175,22925715,purple,Ellesmere Road,purple,0.976,250.6
+176,655775839,pink,Hackney Road,pink,0.943,164.3
+177,200596450,red,Strand,red,0.994,385.5
+178,41962044,yellow,,yellow,0.94,48.5
+179,27457828,mixed:red+yellow,Langford Close,pink,0.722,51.6
+180,895242042,purple,Elystan Place,purple,0.993,75.4
+181,4358462,red,Duke of York Street,red,0.999,106.2
+182,28478534,purple,Bushberry Road,purple,1.0,171.6
+183,1215951289,pink,Masjid Lane,pink,1.0,36.8
+184,5882770,purple,Brune Street,pink,0.991,114.6
+185,4228065,pink,Fullerton Road,pink,0.995,152.4
+186,8509952,purple,Alconbury Road,red,0.997,193.1
+187,150700760,unclear,Brunswick Mews,pink,0.79,54.3
+188,480770669,pink,St. Paul Street,purple,1.0,69.5
+189,4648632,red,Grote's Buildings,red,1.0,100.3
+190,2953311,purple,Querrin Street,red,1.0,120.5
+191,777625138,purple,Harbut Road,pink,0.975,55.9
+192,11023817,pink,Bolden Street,pink,0.997,71.9
+193,2953291,purple,Dymock Street,purple,0.995,183.8
+194,1426590860,dkblue,Truman Walk,dkblue,1.0,103.5
+195,378425507,mixed:red+yellow,Brompton Road,yellow,0.476,36.8
+196,24935730,yellow,Denmark Hill,red,0.835,419.1
+197,4733674,purple,Glenaffric Avenue,purple,0.869,85.2
+198,1456210844,red,Amhurst Road,red,1.0,41.9
+199,639184474,red,Dalberg Road,pink,0.976,67.9
